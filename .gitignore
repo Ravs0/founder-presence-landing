@@ -1,4 +1,6 @@
 .DS_Store
 .vercel/
+.playwright-cli/
 node_modules/
+output/
 *.log
