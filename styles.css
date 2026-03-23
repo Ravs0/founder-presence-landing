@@ -21,6 +21,8 @@
   --space-8: 3rem;
   --space-9: 4rem;
   --space-10: 5rem;
+  --space-11: 6rem;
+  --space-12: 7rem;
 }
 
 *,
@@ -68,7 +70,7 @@ li {
 .site-header {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
-  padding: var(--space-5) 0 0;
+  padding: var(--space-6) 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +80,7 @@ li {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0;
+  gap: var(--space-3);
   color: var(--text);
   font-family: "Manrope", sans-serif;
   font-size: 0.88rem;
@@ -171,7 +173,7 @@ li {
 }
 
 .hero {
-  padding: var(--space-8) 0 var(--space-9);
+  padding: var(--space-9) 0 var(--space-10);
 }
 
 .hero-shell {
@@ -179,7 +181,7 @@ li {
   overflow: hidden;
   max-width: 920px;
   margin: 0 auto;
-  padding: clamp(3rem, 6vw, 4.9rem) 0 var(--space-4);
+  padding: clamp(3.4rem, 6vw, 5.4rem) 0 var(--space-5);
   text-align: center;
 }
 
@@ -286,13 +288,13 @@ h2 {
 }
 
 .partners {
-  padding: 0 0 var(--space-9);
+  padding: 0 0 var(--space-10);
 }
 
 .partners-shell {
   display: grid;
-  gap: var(--space-6);
-  padding: var(--space-5) 0 0;
+  gap: var(--space-7);
+  padding: var(--space-6) 0 0;
   border-top: 1px solid rgba(13, 13, 13, 0.08);
 }
 
@@ -317,7 +319,7 @@ h2 {
 .partners-marquee {
   position: relative;
   overflow: hidden;
-  padding: var(--space-5) 0;
+  padding: var(--space-6) 0;
   border-top: 1px solid rgba(13, 13, 13, 0.06);
   border-bottom: 1px solid rgba(13, 13, 13, 0.06);
   border-radius: 30px;
@@ -361,7 +363,7 @@ h2 {
 }
 
 .offers {
-  padding: 0 0 var(--space-10);
+  padding: 0 0 var(--space-12);
 }
 
 .section-header {
@@ -378,10 +380,10 @@ h2 {
 }
 
 .offers-grid {
-  margin-top: var(--space-7);
+  margin-top: var(--space-8);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-6);
+  gap: var(--space-7);
 }
 
 .offer-card {
@@ -389,9 +391,9 @@ h2 {
   overflow: hidden;
   display: grid;
   align-content: start;
-  gap: var(--space-5);
+  gap: var(--space-6);
   min-height: 100%;
-  padding: var(--space-6);
+  padding: var(--space-7);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.84);
@@ -440,7 +442,7 @@ h2 {
 }
 
 .offer-topline {
-  padding-bottom: var(--space-5);
+  padding-bottom: var(--space-6);
   border-bottom: 1px solid rgba(28, 34, 47, 0.12);
 }
 
@@ -481,7 +483,7 @@ h2 {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .offer-list li {
@@ -527,7 +529,7 @@ h2 {
 .footer-cta {
   position: relative;
   overflow: hidden;
-  padding: var(--space-9) 0 var(--space-8);
+  padding: var(--space-10) 0 var(--space-9);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -554,7 +556,7 @@ h2 {
 }
 
 .footer-lower {
-  padding: var(--space-5) 0 var(--space-7);
+  padding: var(--space-6) 0 var(--space-8);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -574,6 +576,10 @@ h2 {
 .footer-lower-item {
   display: flex;
   align-items: center;
+}
+
+.footer-links {
+  gap: var(--space-5);
 }
 
 .footer-lower-item a {
@@ -688,7 +694,7 @@ h2 {
   }
 
   .brand {
-    gap: 0;
+    gap: var(--space-2);
     font-size: 0.78rem;
   }
 
@@ -703,11 +709,11 @@ h2 {
   }
 
   .hero {
-    padding: var(--space-5) 0 var(--space-7);
+    padding: var(--space-6) 0 var(--space-8);
   }
 
   .hero-shell {
-    padding: var(--space-6) 0 var(--space-2);
+    padding: var(--space-6) 0 var(--space-3);
   }
 
   h1 {
@@ -739,7 +745,7 @@ h2 {
   }
 
   .partners {
-    padding-bottom: var(--space-7);
+    padding-bottom: var(--space-8);
   }
 
   .partners-copy h2 {
@@ -747,7 +753,7 @@ h2 {
   }
 
   .partners-marquee {
-    padding: var(--space-4) 0;
+    padding: var(--space-5) 0;
     border-radius: 22px;
   }
 
@@ -772,17 +778,22 @@ h2 {
   }
 
   .offer-card {
-    gap: var(--space-4);
-    padding: var(--space-5) var(--space-4);
+    gap: var(--space-5);
+    padding: var(--space-5);
     border-radius: 24px;
   }
 
   .offers {
-    padding-bottom: var(--space-8);
+    padding-bottom: var(--space-10);
+  }
+
+  .offers-grid {
+    margin-top: var(--space-6);
+    gap: var(--space-5);
   }
 
   .offer-topline {
-    padding-bottom: var(--space-4);
+    padding-bottom: var(--space-5);
   }
 
   .offer-name {
@@ -798,7 +809,7 @@ h2 {
   }
 
   .offer-list {
-    gap: var(--space-3);
+    gap: var(--space-4);
     margin-top: 0;
   }
 
@@ -821,7 +832,7 @@ h2 {
   }
 
   .footer-cta {
-    padding: var(--space-7) 0 var(--space-6);
+    padding: var(--space-8) 0 var(--space-7);
     gap: var(--space-4);
   }
 
@@ -845,8 +856,12 @@ h2 {
   .footer-lower {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--space-3);
-    padding: var(--space-4) 0 var(--space-6);
+    gap: var(--space-4);
+    padding: var(--space-5) 0 var(--space-7);
+  }
+
+  .footer-links {
+    gap: var(--space-4);
   }
 }
 
