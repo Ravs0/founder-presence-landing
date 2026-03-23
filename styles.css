@@ -105,16 +105,6 @@ li {
   font-weight: 700;
 }
 
-.signal-mark {
-  --signal-size: 5rem;
-  position: absolute;
-  width: var(--signal-size);
-  height: var(--signal-size);
-  color: var(--teal);
-  opacity: 0.52;
-  animation: signal-drift 9s ease-in-out infinite;
-}
-
 .signal-mark-brand {
   --signal-size: 1.7rem;
   position: relative;
@@ -191,53 +181,6 @@ li {
   margin: 0 auto;
   padding: clamp(3rem, 6vw, 4.9rem) 0 var(--space-4);
   text-align: center;
-}
-
-.hero-geometry,
-.footer-geometry {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.signal-mark-hero-large {
-  --signal-size: 5.9rem;
-  right: 7%;
-  top: 3.4rem;
-}
-
-.signal-mark-hero-small {
-  --signal-size: 2rem;
-  left: 10%;
-  top: 8.5rem;
-  animation-delay: -1.4s;
-}
-
-.hero-shell::after {
-  content: "";
-  position: absolute;
-  right: 4%;
-  top: 7%;
-  width: min(22rem, 34vw);
-  height: min(22rem, 34vw);
-  border-radius: 2rem;
-  opacity: 0.16;
-  background: radial-gradient(circle, var(--teal) 0 1.2px, transparent 1.2px);
-  background-size: 14px 14px;
-  mask-image: radial-gradient(circle at center, black 48%, transparent 82%);
-  pointer-events: none;
-}
-
-.hero-shell::before {
-  content: "";
-  position: absolute;
-  left: 10%;
-  top: 17%;
-  width: 11rem;
-  height: 11rem;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(0, 109, 91, 0.08), transparent 70%);
-  pointer-events: none;
 }
 
 .eyebrow,
@@ -591,13 +534,6 @@ h2 {
   gap: var(--space-6);
 }
 
-.signal-mark-footer-large {
-  --signal-size: 4.5rem;
-  right: 10rem;
-  bottom: 0.6rem;
-  opacity: 0.36;
-}
-
 .footer-copy {
   max-width: 48rem;
 }
@@ -653,17 +589,6 @@ h2 {
 [data-reveal] {
   opacity: 1;
   transform: none;
-}
-
-@keyframes signal-drift {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -8px, 0);
-  }
 }
 
 @keyframes ring-breathe {
@@ -785,20 +710,6 @@ h2 {
     padding: var(--space-6) 0 var(--space-2);
   }
 
-  .signal-mark-hero-large {
-    --signal-size: 3.4rem;
-    right: -0.2rem;
-    top: 1.3rem;
-    opacity: 0.24;
-  }
-
-  .signal-mark-hero-small {
-    --signal-size: 1.2rem;
-    left: 0.2rem;
-    top: 4.4rem;
-    opacity: 0.2;
-  }
-
   h1 {
     max-width: 8.8ch;
     margin-top: var(--space-4);
@@ -914,13 +825,6 @@ h2 {
     gap: var(--space-4);
   }
 
-  .signal-mark-footer-large {
-    --signal-size: 3rem;
-    right: 1rem;
-    bottom: 2rem;
-    opacity: 0.22;
-  }
-
   .footer-copy h2 {
     max-width: 11ch;
     font-size: clamp(1.8rem, 9vw, 2.4rem);
@@ -956,7 +860,6 @@ h2 {
     transition: none;
   }
 
-  .signal-mark,
   .signal-ring,
   .signal-square,
   .signal-line,
